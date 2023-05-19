@@ -90,5 +90,5 @@ fi
 echo "All resources installed successfully."
 
 # Wait for 2-3 minutes (adjust the duration as needed)
-echo "Waiting for 2-3 minutes..."
-sleep 180
+# echo "Waiting for 2-3 minutes..."
+# sleep 180
