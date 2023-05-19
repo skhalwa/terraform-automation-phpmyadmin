@@ -36,6 +36,8 @@ echo "CREATE USER 'shubham'@'localhost' IDENTIFIED BY '$MYSQL_ROOT_PASSWORD';" |
 echo "GRANT ALL PRIVILEGES ON * . * TO 'shubham'@'localhost';" | sudo mysql -u root -p"$MYSQL_ROOT_PASSWORD"
 echo "FLUSH PRIVILEGES;" | sudo mysql -u root -p"$MYSQL_ROOT_PASSWORD"
 
-
+sudo apt install -y curl
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+sudo apt install -y nodejs
  
 
