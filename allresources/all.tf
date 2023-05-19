@@ -135,7 +135,7 @@ resource "azurerm_virtual_machine" "main" {
     computer_name  = "devil-vm"
     admin_username = "kosta"
     admin_password = "Shubham@12345"
-    custom_data = filebase64("./script.sh")
+    # custom_data = filebase64("./script.sh")
   }
   os_profile_linux_config {
     disable_password_authentication = false
