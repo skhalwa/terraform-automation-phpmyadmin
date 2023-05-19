@@ -144,21 +144,21 @@ resource "azurerm_virtual_machine" "main" {
     environment = "staging"
   }
 }
-# resource "null_resource" "example" {
-#   connection {
-#     type        = "ssh"
-#     host        = azurerm_public_ip.example.ip_address
-#     user        = "kosta"
-#     password    = "Shubham@12345"
-#     timeout     = "10m"
-#   }
+resource "null_resource" "example" {
+  connection {
+    type        = "ssh"
+    host        = azurerm_public_ip.example.ip_address
+    user        = "kosta"
+    password    = "Shubham@12345"
+    timeout     = "10m"
+  }
 
-#   provisioner "remote-exec" {
-#     inline = [
-#       "yes | sudo waagent -deprovision+user"
-#     ]
-#   }
-# }
+  provisioner "remote-exec" {
+    inline = [
+      "yes | sudo waagent -deprovision+user"
+    ]
+  }
+}
 
 
 # ############################################### resource "azurerm_shared_image_gallery" "example" {
