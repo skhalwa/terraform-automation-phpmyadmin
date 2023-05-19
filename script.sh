@@ -51,7 +51,7 @@ echo "phpmyadmin phpmyadmin/mysql/app-pass password $PHPMYADMIN_PASSWORD" | sudo
 echo "phpmyadmin phpmyadmin/reconfigure-webserver multiselect apache2" | sudo debconf-set-selections
 
 # Update package lists and install PHP and PHPMyAdmin
-sudo apt update && sudo apt install -y php libapache2-mod-php php-mysql
+sudo apt update && sudo apt install -y php libapache2-mod-php php-mysql phpmyadmin
 PHPMYADMIN_INSTALL_STATUS=$?
 
 # Check if PHP and PHPMyAdmin installation was successful
